@@ -48,3 +48,57 @@ header.top_header .wrapper .right_nav ul li a:hover{
 }
 
 /*Header style end*/
+
+
+/*Page_heading style start*/
+.page_heading{
+    min-height: 400px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page_heading.about_page{
+    background: transparent url(../img/about_header.jpg) center center no-repeat;
+}
+.svg_style{
+    position: relative;
+}
+.svg_style::before{
+    content: "";
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    background: url("../img/svg/top.svg") center center no-repeat;
+    top: 0;
+    left: 0;
+}
+.svg_style::after{
+    content: "";
+    width: 100%;
+    height: 110px;
+    background: url("../img/svg/bottom.svg") center center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.title_heading{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+    }
+.subtitle_heading{
+    font-family: Waiting for the Sunrise;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+
+
+/*Page_heading style end*/
