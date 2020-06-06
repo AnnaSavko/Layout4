@@ -1,0 +1,50 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Waiting for the Sunrise', cursive;*/
+    color: #9A9A9A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+}
+/*Header style starts*/
+.top_header{
+
+}
+.wrapper{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+header.top_header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+header.top_header .wrapper .left_nav ul, 
+header.top_header .wrapper .right_nav ul{
+    display: flex;
+    font-size: 18px;
+    line-height: 22px;
+    color: #433840;
+}
+header.top_header .wrapper .left_nav ul li,
+header.top_header .wrapper .right_nav ul li{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+header.top_header .wrapper .left_nav ul li a,
+header.top_header .wrapper .right_nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+header.top_header .wrapper .left_nav ul li a:hover,
+header.top_header .wrapper .right_nav ul li a:hover{
+    color: #FEA3AC;
+    transition: all 0.3s ease-in-out;
+}
+
+/*Header style end*/
