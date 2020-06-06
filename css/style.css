@@ -1,0 +1,104 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Waiting for the Sunrise', cursive;*/
+    color: #9A9A9A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+}
+/*Header style starts*/
+.top_header{
+
+}
+.wrapper{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+header.top_header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+header.top_header .wrapper .left_nav ul, 
+header.top_header .wrapper .right_nav ul{
+    display: flex;
+    font-size: 18px;
+    line-height: 22px;
+    color: #433840;
+}
+header.top_header .wrapper .left_nav ul li,
+header.top_header .wrapper .right_nav ul li{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+header.top_header .wrapper .left_nav ul li a,
+header.top_header .wrapper .right_nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+header.top_header .wrapper .left_nav ul li a:hover,
+header.top_header .wrapper .right_nav ul li a:hover{
+    color: #FEA3AC;
+    transition: all 0.3s ease-in-out;
+}
+
+/*Header style end*/
+
+
+/*Page_heading style start*/
+.page_heading{
+    min-height: 400px;
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page_heading.about_page{
+    background: transparent url(../img/about_header.jpg) center center no-repeat;
+}
+.svg_style{
+    position: relative;
+}
+.svg_style::before{
+    content: "";
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    background: url("../img/svg/top.svg") center center no-repeat;
+    top: 0;
+    left: 0;
+}
+.svg_style::after{
+    content: "";
+    width: 100%;
+    height: 110px;
+    background: url("../img/svg/bottom.svg") center center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.title_heading{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+    }
+.subtitle_heading{
+    font-family: Waiting for the Sunrise;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+
+
+/*Page_heading style end*/
