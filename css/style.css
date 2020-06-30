@@ -98,7 +98,34 @@ header.top_header .wrapper .right_nav ul li a:hover{
     line-height: 50px;
     color: #FFFFFF;
 }
-
-
-
 /*Page_heading style end*/
+
+/*About style start*/
+.about_box{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+.about_box .item_data:first-child{
+    padding-left: 25px;
+    padding-right: 45px;    
+}
+.about_box .item_data:last-child{
+    padding-left: 45px;
+    padding-right: 25px;    
+}
+.about_box .item_data article{
+    margin-bottom: 80px;
+}
+.about_box .item_data article:last-child{
+    margin-bottom: 0;
+}
+.about_box .item_data article h3{
+    font-size: 30px;
+    line-height: 37px;
+    color: #433840;
+    margin-bottom: 12px;
+}
+
+/*About style end*/
