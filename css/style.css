@@ -136,6 +136,7 @@ header.top_header .wrapper .right_nav ul li a:hover{
     background:#FEA3AC;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 60px;
 }
 .infographics .info_list{
     min-height: 600px;
@@ -171,3 +172,105 @@ header.top_header .wrapper .right_nav ul li a:hover{
 }
 
 /*Infographics style end*/
+/*Team styles start*/
+.team .box_title{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #433840;
+    text-align: center;
+
+}
+.team .box_subtitle{
+    font-family: Waiting for the Sunrise;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    color: #F7A1A8;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.team_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.team_list .team_member {
+    width: calc(50% - 201.5px);
+    background: #C9E3F4;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 190px;
+    display: flex;
+    align-items: center;
+}
+ .team_list .image img{
+     border-radius: 100%;
+     width: 330px;
+     height: 330px;
+     margin-left: -190px;
+     margin-bottom: 25px;
+     margin-top: 25px;
+ }   
+ .team_list ,.team_member .data{
+     margin-left: 17px;
+ }
+ .team_list .team_member .name{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+ }
+ .team_list .team_member .post{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #433840;
+    display: block;
+    margin-bottom: 14px;
+ }
+ .team_list .team_member .data p{
+    font-weight: 300;
+    line-height: 25px;
+    color: #433840;
+    margin-bottom: 10px;
+ }
+
+.team_list .team_member:nth-child(2), 
+.team_list .team_member:nth-child(3){
+    background: #DFEEB6;
+}
+.team_list .team_member:nth-child(3),
+.team_list .team_member:nth-child(4){
+    margin-right: 190px;
+    margin-left: 0;
+}
+.team_list .team_member:nth-child(3) .image,
+.team_list .team_member:nth-child(4) .image{
+    order: 2;
+}
+.team_list .team_member:nth-child(3) .image img,
+.team_list .team_member:nth-child(4) .image img{
+    margin-left: 0;
+    margin-right: -190px;
+}
+.team_list .team_member:nth-child(3) .data,
+.team_list .team_member:nth-child(4) .data{
+    order: 1;
+    margin-right: 17px;
+    margin-left: 0;
+    text-align: right;
+}
+.team_list .social a:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+.team_list .social_icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(0.25);
+}
+/*Team styles end*/
