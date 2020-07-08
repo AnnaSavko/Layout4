@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+
+}
 body{
     font-family: 'Quicksand', sans-serif;
     /*font-family: 'Waiting for the Sunrise', cursive;*/
@@ -6,11 +10,15 @@ body{
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
-
 }
 /*Header style starts*/
 .top_header{
-
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: lavender;
+    opacity: 0.8;
+    z-index: 100;
 }
 .wrapper{
     max-width: 1180px;
@@ -56,6 +64,7 @@ header.top_header .wrapper .right_nav ul li a:hover{
     background-size: cover;
     margin-right: 50px;
     margin-left: 50px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,23 +405,11 @@ header.top_header .wrapper .right_nav ul li a:hover{
 
 }
 @media screen and (max-width: 720px){
-    .left_nav, .right_nav{
-        display: none;
+    header.top_header .wrapper .left_nav ul, 
+    header.top_header .wrapper .right_nav ul{
+        flex-direction: column;
     }
-    .wrapper{
-        position: relative;
-    }
-    .burger_menu{
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        background: url(../img/svg/menu-2.svg) no-repeat top right ;
-        background-size: contain;
-        position: absolute;
-        right: 0;
-        margin-right: 15px;
-        filter: invert(0.5);
-    }
+       
     .about_box{
         flex-direction: column;
         width: 90%;
@@ -429,8 +426,14 @@ header.top_header .wrapper .right_nav ul li a:hover{
     }
 }
 @media screen and (max-width: 570px){
-    .wrapper .logo {
-       
+    header.top_header .wrapper{
+        flex-direction: column;
+        height: 100%;
+    }
+    header.top_header .wrapper li{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px;
     }
     .infographics{
         margin-bottom: 30px;
