@@ -148,6 +148,7 @@ header.top_header .wrapper .right_nav ul li a:hover{
     font-size: 30px;
     line-height: 50px;
     color: #FFFFFF;
+    
 }
 /*Page_heading style end*/
 
@@ -527,8 +528,14 @@ header.top_header .wrapper .right_nav ul li a:hover{
     .header_nav_close-line:last-child{
         transform: translateY(-50%) rotate(-45deg);
     }
-
-
+    .subtitle_heading{
+        text-align: center;
+    }
+    .team_list .team_member:nth-child(3) .data, 
+    .team_list .team_member:nth-child(4) .data {
+        margin-left: 17px;
+        text-align: left;
+    }
 
 
     .infographics .info_list{
@@ -553,7 +560,7 @@ header.top_header .wrapper .right_nav ul li a:hover{
         margin-left: 5px;
     }
     .team_list .team_member:nth-child(3) .image img,
-.team_list .team_member:nth-child(4) .image img{
+    .team_list .team_member:nth-child(4) .image img{
     margin-right: 5px;}
     .footer .footer_info_block{
         width: 100%;
@@ -563,8 +570,16 @@ header.top_header .wrapper .right_nav ul li a:hover{
     .team_list .team_member:nth-child(4) .image{
         order: 1;
     }
-
-    .footer .footer_info_block .instagram_feed-images{}
+    .footer .footer_info{
+        padding: 0 30px;
+        margin-bottom: 10px;
+    }
+    .footer .footer_info_block{
+        margin-bottom: 35px;
+    }
+    .footer .footer_copyrights{
+        justify-content: space-around;
+    }
 
 }
 
