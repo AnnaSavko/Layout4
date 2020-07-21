@@ -4,10 +4,10 @@
     const handlerClick = () => {
         if (window.innerWidth < 570 ) {
             for (let i = 0; i < menuLinks.length; i += 1) {
-                menuLinks[i].addEventListener("click", () => {
-                  menu.classList.remove("mobile__nav_active");
+                menuLinks[i].addEventListener("click", () => { 
+                menu.classList.remove("mobile_nav_active");
                 });
-              }
+            }
         }
       };
     const burgerItem = document.querySelector(".burger");
@@ -23,7 +23,6 @@
   window.addEventListener("resize", function () {
     handlerClick();
   });
-    
 })();
 
 
